@@ -504,3 +504,41 @@ body {
         order: -1;
     }
 }
+/* 活動優惠區塊 */
+.promo-box {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.promo-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.promo-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.promo-list li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.promo-note {
+  font-size: 13px;
+  color: #8d6b6b;
+  margin-top: 6px;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .promo-box {
+    grid-template-columns: 1fr;
+  }
+}
+
