@@ -554,5 +554,11 @@ body {
   object-fit: contain;    /* 保留完整圖片，不變形 */
   display: block;
 }
+@media (max-width: 768px) {
+  .promo-image img {
+    max-height: 360px;
+  }
+}
+
 
 
