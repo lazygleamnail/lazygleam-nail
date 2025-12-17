@@ -320,14 +320,21 @@ body {
     gap: 18px;
 }
 
+/* ===== 作品集（完整顯示，不裁切）===== */
 .portfolio-photo {
     width: 100%;
-    aspect-ratio: 3 / 4;
     border-radius: var(--radius-md);
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
+    overflow: visible;          /* 不裁切 */
 }
+
+/* 作品集圖片本身 */
+.portfolio-photo img {
+    width: 100%;
+    height: auto;               /* 高度依圖片比例 */
+    object-fit: contain;        /* 完整顯示 */
+    display: block;
+}
+
 /* ===== 作品集圖片尺寸控制 ===== */
 .portfolio-photo {
   width: 100%;
@@ -569,6 +576,7 @@ body {
   display: block;
   border-radius: 20px;
 }
+
 
 
 
