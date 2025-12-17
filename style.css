@@ -589,6 +589,22 @@ body {
   height: auto;          /* 整張顯示，不裁切 */
   display: block;
 }
+/* ===== 封面美甲作品圖片 ===== */
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;      /* 封面直式比例 */
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* 封面滿版好看 */
+  display: block;
+}
+
 
 
 
